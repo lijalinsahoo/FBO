@@ -14,9 +14,13 @@
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
 <link type="text/css" rel="stylesheet" href="css/animations.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
+<script type="text/javascript" src="datajs/jq.js"></script>
+<script type="text/javascript" src="datajs/movie_details.js"></script>
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
 <script type="text/javascript" src="datajs/user_menu.js"></script>
+<script type="text/javascript" src="datajs/submit_content_review.js"></script>
 </head>
 <body id="mobile_wrap">
 
@@ -27,16 +31,12 @@
     <div class="panel panel-left panel-reveal">
 			<nav class="sidebar-nav">
 			<ul id="sidemenu">
-			
 			</ul>
 			</nav>
     </div>
 
     <div class="panel panel-right panel-reveal">
-      <div class="user_login_info" id="user_info_box">
-	  
-                
-      </div>
+      <div class="user_login_info" id="user_info_box">      </div>
     </div>
 
     <div class="views">
@@ -46,43 +46,84 @@
 
 
         <div class="pages">
+  <div data-page="about" class="page no-toolbar no-navbar">
+    <div class="page-content">
+    
+	<div class="navbarpages">
+		<div class="navbar_left">
+			<div class="logo_text"><a href="index.html"><img src="images/logo.png"></a></div>
+		</div>			
+		<a href="#" data-panel="left" class="open-panel">
+			<div class="navbar_right"><img src="images/icons/black/menu.png" alt="" title="" /></div>
+		</a>
+		<a href="#" data-panel="right" class="open-panel">
+			<div class="navbar_right whitebg"><img src="images/icons/black/user.png" alt="" title="" /></div>
+		</a>					
+	</div>
+						
+     <div id="pages_maincontent">
+      <img src="images/loader.gif" style="display:block;" id="loader" />
+          <h2 class="page_title" id="movie_title"></h2>
+			  
+                  <!-- Slider -->
+                 <div class="swiper-container-pages swiper-init" data-effect="slide" data-pagination=".swiper-pagination">
+                    <div class="swiper-wrapper">
+                    
+                      <div class="swiper-slide" id="movie_image">
+			<!--<img src="images/page_photo.jpg" alt="" title="" />-->
+                       </div>
+                      <!--<div class="swiper-slide">
+			<img src="images/page_photo2.jpg" alt="" title="" />
+                       </div>
+                      <div class="swiper-slide">
+			<img src="images/page_photo3.jpg" alt="" title="" />
+                       </div>	-->	   
+					   
+                    </div>
+                    <!--<div class="swiper-pagination"></div>-->
+                  </div>		  
+			  
+	<div class="page_single layout_fullwidth_padding">	
+	  Rating Avg : <span id="star_rate"></span> &nbsp; Release Date : <span id="date"></span>
+              <blockquote id="movie_synopsis" style="text-align:justify; color:#000000;">
+             
+              </blockquote>
+			  
+              <h3>View Details</h3>   
+              <ul class="features_list" id="movie_links">
+					
+              </ul>
+                               <!-- <li><a href="toogle.html"><img src="images/icons/black/toggle.png" alt="" title="" /><span>Toogles</span></a></li>	  
+                  <li><a href="#" data-popup=".popup-social" class="open-popup"><img src="images/icons/black/love.png" alt="" title="" /><span>Social share</span></a></li>-->
 
-          <div data-page="index" class="page homepage">
-            <div class="page-content homepagecontent">	
+             <!-- <a href="features.html" class="button_full">Few Details</a>-->
 
-                        <div class="homenavbar">
-                                <img src="images/logo.png">								
-                        </div>
-			
-			<nav class="main-nav">
-			<ul>
-			<li class="navbg1"><a href="index.html" class="navbgtransblue"><img src="images/icons/white/home.png" alt="" title="" /><span>Home</span></a></li>
-			<li class="navbg2"><a href="latestmovies.html" class="navbgtransblack"><img src="images/icons/white/movie.png" alt="" title="" /><span>Latest Movies</span></a></li>
-			
-
-			<li class="navbg3"><a href="trending.html" class="navbgtransblack"><img src="images/icons/white/trending.png" alt="" title="" /><span>Trending</span></a></li>
-			<li class="navbg4"><a href="trailer.html" class="navbgtransgreen"><img src="images/icons/white/trailer.png" alt="" title="" /><span>Trailer Videos</span></a></li>	
-			
-			<li class="navbg5"><a href="topreview.html" class="navbgtransred"><img src="images/icons/white/top.png" alt="" title="" /><span>Top Review</span></a></li>
-			<li class="navbg6"><a href="boxoffice.html" class="navbgtransblack"><img src="images/icons/white/box.png" alt="" title="" /><span>Box Office</span></a></li>
-			
-
-			<li class="navbg7"><a href="fbo-series.html" class="navbgtransblack"><img src="images/icons/white/video.png" alt="" title="" /><span>FBO Series</span></a></li>
-			<li class="navbg8"><a href="music.html" class="navbgtransyellow"><img src="images/icons/white/music.png" alt="" title="" /><span>Music</span></a></li>
-			
-			<li class="navbg9"><a href="upcoming.html" data-popup=".popup-login" class="navbgtransviolet"><img src="images/icons/white/lock.png" alt="" title="" /><span>Upcoming Movies</span></a></li>
-			<li class="navbg10"><a href="news.html"><img src="images/icons/white/blog.png" alt="" title="" /><span>News</span></a></li>
-			</ul>
-			</nav>	    
-            </div>
-          </div>
-        </div>
+              <h4 id="star_cast"></h4>
+              <ul class="simple_list">
+              <li id="director"></li>
+              <li id="genre"></li>
+              <li id="music_dir"></li>
+              <li id="banner"></li>
+              </ul>
+			  
+			  
+              <a href="latestmovies.html" class="button_full external">Back To Listing</a>
+			  
+			  
+         </div>
+      
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
 
         <!-- Bottom Toolbar-->
-        <div class="toolbar">
+        <!--<div class="toolbar">
               <div class="toolbar-inner">
               <ul class="toolbar_icons">
-              <!--<li><a href="#" data-panel="right" class="open-panel navbgtransblack"><img src="images/icons/white/users.png" alt="" title="" /></a></li>-->
+              <li><a href="#" data-panel="right" class="open-panel navbgtransblack"><img src="images/icons/white/users.png" alt="" title="" /></a></li>
               <li><a href="latestmovies.html"><img src="images/icons/white/movie.png" alt="" title="" /></a></li>
               <li class="menuicon"><a href="form.html"><img src="images/icons/yellow/review.png" alt="" title="" /></a></li>
               <li ><a href="photos.html"><img src="images/icons/white/photos.png" alt="" title="" /></a></li>
@@ -90,8 +131,7 @@
               
               </ul>
               </div>  
-        </div>
-
+        </div>-->
       </div>
     </div>
 
@@ -109,12 +149,10 @@
                 </form>
                 <div class="signup_bottom">
                     <p>Don't have an account?</p>
-                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
-                </div>
+                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>                </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
 
@@ -132,12 +170,10 @@
 		<h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
 		<div class="signup_social">
 			<a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
-			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
-		</div>		
+			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>		</div>		
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
 	
@@ -155,8 +191,7 @@
                 </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
-            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
         </div>
     </div>
 	
