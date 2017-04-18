@@ -23,7 +23,7 @@ function load_prev() {
 
 function load_data(offset) {
 	$("#listview").html('');
-	var url=BaseURL+"boxoffice_data.php?offset="+offset;
+	var url=BaseURL+"top_review.php?offset="+offset;
 		$.getJSON(url,function(result){ //alert(result);
 					$("#loader").hide();							
 			console.log(result);
@@ -45,6 +45,8 @@ function load_data(offset) {
 				var movie_primary_cast=field.movie_primary_cast;
 	        	var movie_release_dt=field.movie_release_dt;
 				var movie_small_image=field.movie_small_image;
+				var score=field.score;
+				var positive=field.positive;
 				var rateHTML = field.rateHTML;
 				
 				var dir = "";
@@ -52,7 +54,7 @@ function load_data(offset) {
 					dir = "movie_images";
 				
 				img_value = ImgURL+dir+"/"+movie_small_image;
-	            $("#listview").append('<li><div class="shop_thumb"><a href="movie-box-detail.html?'+movie_id+'"><img src="'+img_value+'" alt="" title="" /></a></div><div class="shop_item_details"><h4><a href="movie-box-detail.html?'+movie_id+'">'+movie_title+'</a></h4><div class="shop_item_price">'+movie_primary_cast+'</div><div class="item_qnty_shop"><div class="box_div"><strong>Opening day: '+opening_day+' Crores</strong></div><div class="box_div"><strong>Lifetime: '+lifetime+'Crores</strong></div></div><a href="#" ><img src="images/icons/black/blog.png" alt="" title="" style="width:20px;" />'+movie_release_dt+'</a> <a href="#" class="open-popup shopfav"><img src="images/icons/black/message.png" alt="" title="" />'+tot_comments+'</a><br>'+rateHTML+'</div></li>');
+	            $("#listview").append('<li><div class="shop_thumb"><a href="movie_review.html?'+movie_id+'"><img src="'+img_value+'" alt="" title="" /></a></div><div class="shop_item_details"><h4><a href="movie_review.html?'+movie_id+'">'+movie_title+'</a></h4><div class="shop_item_price">'+movie_primary_cast+'</div><div class="item_qnty_shop">Total Reviews : '+tot_comments+'<br>Score : '+score+'<br>Positive : '+positive+'<br><i class="fa fa-calendar"></i> '+movie_release_dt+'<br>'+rateHTML+'</div></div> </div></li>');
 				}
 	        });
     	});
