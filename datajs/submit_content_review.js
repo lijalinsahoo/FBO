@@ -51,7 +51,7 @@ function empty_star() {
 			
             var dataString="name="+name+"&email="+email+"&comment="+comment+"&rate_value="+rating+"&review_type="+review_type+"&review_for_id="+review_for_id+"&mode=insert";
 			//alert("http://swsinc.in/FBO/phonegap/insert_content_review.php?"+dataString);
-            if($.trim(name).length>0 & $.trim(comment).length>0 & $.trim(email).length>0)
+            if($.trim(name).length>0 & $.trim(comment).length>0 & $.trim(email).length>0 & $.trim(rating).length>0)
             {
                 $.ajax({
                     type: "POST",

@@ -3,6 +3,16 @@
   // Handler for .load() called.
 //});$( "#sarticle" ).click(function()
 
+function show_tab(tone,ttwo,bone,btwo) {
+	//alert(tone);
+	$(ttwo).hide();	
+	$(tone).show();	
+	
+	//alert();
+	$(btwo).removeClass('active');
+	//$(tone).removeClass('active');
+	$(bone).addClass('active');
+}
 	
 	$(document).ready(function()
 		{
