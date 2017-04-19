@@ -140,6 +140,11 @@
     </platform>
 	
 	<platform name="winphone">
+		
+		<config-file platform="ios" parent="NSPhotoLibraryUsageDescription" mode="replace">
+  <string> We actually not using camera but have just included the plugin if in case we may require in the upgrade version </string>
+</config-file>
+
       
     </platform>
 	
