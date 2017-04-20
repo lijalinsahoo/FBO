@@ -18,9 +18,24 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
 <script type="text/javascript" src="datajs/jq.js"></script>
-<script type="text/javascript" src="datajs/upcoming.js"></script>	
+<script type="text/javascript" src="datajs/movie_photos.js"></script>	
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
 <script type="text/javascript" src="datajs/user_menu.js"></script>
+
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js" ></script>
+<script type="text/javascript" src="js/framework7.js"></script>
+<script type="text/javascript" src="js/jquery.swipebox.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="js/email.js"></script>
+<script type="text/javascript" src="js/audio.min.js"></script>
+<script type="text/javascript" src="js/my-app.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+        
+});
+</script>
 </head>
 <body id="mobile_wrap">
 
@@ -44,7 +59,7 @@
       <div class="view view-main">
 
 		<div class="pages">
-  <div data-page="shop" class="page no-toolbar no-navbar">
+  <div data-page="photos" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
@@ -58,40 +73,45 @@
 			<div class="navbar_right whitebg"><img src="images/icons/black/user.png" alt="" title="" /></div>
 		</a>	</div>
      
+     <!--<div class="bottombarpages">
+       <div class="gallery_switch">        
+        <a href="#" id="view13" class="switcher active"><img src="images/switch_13_active.png" alt="Grid"></a>
+        <a href="#" id="view12" class="switcher"><img src="images/switch_12.png" alt="Grid"></a>
+        <a href="#" id="view11" class="switcher"><img src="images/switch_11.png" alt="List"></a>      </div>
+     </div>--> 
+
      <div id="pages_maincontent">
       
-     <h2 class="page_title">Upcoming Movies</h2>
+              <h2 class="page_title">PHOTO GALLERY</h2>
+			  
+<div class="page_single layout_fullwidth_padding">
+      <!--<img src="images/loader.gif" style="display:block;" id="loader" />-->
       
-	<div class="page_single layout_fullwidth_padding">
-      <img src="images/loader.gif" style="display:block;" id="loader" />
-      <ul class="shop_items" id="listview">
+      <div class="tabs-animated-wrap photos_tabs">
+                    <div class="tabs">
+                          <div id="tab1p" class="tab active">
+                             <ul id="photoslist" class="photo_gallery_13">
+                               
+                                <!--<li><a rel="gallery-3" href="images/photos/photo13.jpg" title="Photo title" class="swipebox"><img src="images/photos/photo13.jpg" alt="image"/></a></li>
+                                <li><a rel="gallery-3" href="images/photos/photo14.jpg" title="Photo title" class="swipebox"><img src="images/photos/photo14.jpg" alt="image"/></a></li>
+                                <li><a rel="gallery-3" href="images/photos/photo15.jpg" title="Photo title" class="swipebox"><img src="images/photos/photo15.jpg" alt="image"/></a></li> -->
+                               <div class="clearleft"></div>
+                              </ul>   
+                          </div>
+    
+                           
+                          
+                           
+ 
+                          
+                    </div>
+              </div>
+      </div>       
       
-          <!--<li>
-          <div class="shop_thumb"><a href="shop-item.html"><img src="images/photos/photo1.jpg" alt="" title="" /></a></div>
-          <div class="shop_item_details">
-          <h4><a href="movie-detail.html">Movie 1</a></h4>
-          <div class="shop_item_price">Starcast</div>
-            <div class="item_qnty_shop">
-                <div class="box_div"><strong>Opening day:</strong></div>
-				<div class="box_div"><strong>End of week:</strong></div>
-				<div class="box_div"><strong>Week 1:</strong></div>
-				<div class="box_div"><strong>Lifetime:</strong></div>
-            </div>
-          <a href="#" ><img src="images/icons/black/blog.png" alt="" title="" style="width:20px;" />Mar 5 2017</a> 
-          <a href="#" class="open-popup shopfav"><img src="images/icons/black/message.png" alt="" title="" />5</a>
-		  <br>
-		  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-          </div>
-          </li>--> 
-      </ul>
-      <input type="hidden" id="next_off" value="">
-	   <input type="hidden" id="prev_off" value="">
-	  
-          <div class="shop_pagination">
-          <a href="#" class="prev_shop" onClick="load_prev()">PREV PAGE</a>
-          <!--<span class="shop_pagenr">1/37</span>-->
-          <a href="#" class="next_shop" onClick="load_next()">NEXT PAGE</a>          </div>
-      </div>
+
+                
+                
+     <div class="clearleft"></div> 
       </div>
     </div>
   </div>
@@ -190,13 +210,6 @@
     </div>
     </div>
     
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/jquery.validate.min.js" ></script>
-<script type="text/javascript" src="js/framework7.js"></script>
-<script type="text/javascript" src="js/jquery.swipebox.js"></script>
-<script type="text/javascript" src="js/jquery.fitvids.js"></script>
-<script type="text/javascript" src="js/email.js"></script>
-<script type="text/javascript" src="js/audio.min.js"></script>
-<script type="text/javascript" src="js/my-app.js"></script>
+
   </body>
 </html>

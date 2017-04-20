@@ -14,11 +14,10 @@
 <link type="text/css" rel="stylesheet" href="css/swipebox.css" />
 <link type="text/css" rel="stylesheet" href="css/animations.css" />
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,900' rel='stylesheet' type='text/css'>
-<link type="text/css" rel="stylesheet" href="custom_css/custom_style.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script type="text/javascript" src="datajs/globalvar.js"></script>
 <script type="text/javascript" src="datajs/jq.js"></script>
-<script type="text/javascript" src="datajs/upcoming.js"></script>	
+
+<script type="text/javascript" src="datajs/music_album.js"></script>	
 <script type="text/javascript" src="datajs/leftmenu.js"></script>
 <script type="text/javascript" src="datajs/user_menu.js"></script>
 </head>
@@ -36,15 +35,20 @@
     </div>
 
     <div class="panel panel-right panel-reveal">
-      <div class="user_login_info" id="user_info_box">      </div>
+      <div class="user_login_info" id="user_info_box">
+	  
+               
+      </div>
     </div>
 
     <div class="views">
 
       <div class="view view-main">
 
-		<div class="pages">
-  <div data-page="shop" class="page no-toolbar no-navbar">
+
+
+        <div class="pages">
+  <div data-page="videos" class="page no-toolbar no-navbar">
     <div class="page-content">
     
 	<div class="navbarpages">
@@ -56,46 +60,25 @@
 		</a>
 		<a href="#" data-panel="right" class="open-panel">
 			<div class="navbar_right whitebg"><img src="images/icons/black/user.png" alt="" title="" /></div>
-		</a>	</div>
-     
+		</a>					
+	</div>
+	
+	
      <div id="pages_maincontent">
       
-     <h2 class="page_title">Upcoming Movies</h2>
+          <h2 class="page_title" id="heading">Music Albums</h2>
+          <img src="images/loader.gif" style="display:block;" id="loader" />
+              <div class="page_single layout_fullwidth_padding" id="listvideo">
+                   
+                   
+              </div>
       
-	<div class="page_single layout_fullwidth_padding">
-      <img src="images/loader.gif" style="display:block;" id="loader" />
-      <ul class="shop_items" id="listview">
+      </div>
       
-          <!--<li>
-          <div class="shop_thumb"><a href="shop-item.html"><img src="images/photos/photo1.jpg" alt="" title="" /></a></div>
-          <div class="shop_item_details">
-          <h4><a href="movie-detail.html">Movie 1</a></h4>
-          <div class="shop_item_price">Starcast</div>
-            <div class="item_qnty_shop">
-                <div class="box_div"><strong>Opening day:</strong></div>
-				<div class="box_div"><strong>End of week:</strong></div>
-				<div class="box_div"><strong>Week 1:</strong></div>
-				<div class="box_div"><strong>Lifetime:</strong></div>
-            </div>
-          <a href="#" ><img src="images/icons/black/blog.png" alt="" title="" style="width:20px;" />Mar 5 2017</a> 
-          <a href="#" class="open-popup shopfav"><img src="images/icons/black/message.png" alt="" title="" />5</a>
-		  <br>
-		  <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i>
-          </div>
-          </li>--> 
-      </ul>
-      <input type="hidden" id="next_off" value="">
-	   <input type="hidden" id="prev_off" value="">
-	  
-          <div class="shop_pagination">
-          <a href="#" class="prev_shop" onClick="load_prev()">PREV PAGE</a>
-          <!--<span class="shop_pagenr">1/37</span>-->
-          <a href="#" class="next_shop" onClick="load_next()">NEXT PAGE</a>          </div>
-      </div>
-      </div>
+      
     </div>
   </div>
-</div>        
+</div>
 
         <!-- Bottom Toolbar-->
         <!--<div class="toolbar">
@@ -110,6 +93,7 @@
               </ul>
               </div>  
         </div>-->
+
       </div>
     </div>
 
@@ -127,10 +111,12 @@
                 </form>
                 <div class="signup_bottom">
                     <p>Don't have an account?</p>
-                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>                </div>
+                    <a href="#" data-popup=".popup-signup" class="open-popup">SIGN UP</a>
+                </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
         </div>
     </div>
 
@@ -148,10 +134,12 @@
 		<h5>- OR REGISTER WITH A SOCIAL ACCOUNT -</h5>
 		<div class="signup_social">
 			<a href="http://www.facebook.com/" class="signup_facebook external">FACEBOOK</a>
-			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>		</div>		
+			<a href="http://www.twitter.com/" class="signup_twitter external">TWITTER</a>            
+		</div>		
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
         </div>
     </div>
 	
@@ -169,7 +157,8 @@
                 </div>
             </div>
             <div class="close_popup_button">
-                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>            </div>
+                <a href="#" class="close-popup"><img src="images/icons/black/menu_close.png" alt="" title="" /></a>
+            </div>
         </div>
     </div>
 	
