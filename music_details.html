@@ -56,7 +56,7 @@
 		<a href="#" data-panel="left" class="open-panel">
 			<div class="navbar_right"><img src="images/icons/black/menu.png" alt="" title="" /></div>
 		</a>
-		<a href="index.html">
+		<a href="index.html" data-panel="right" class="open-panel">
 			<div class="navbar_right whitebg"><img src="images/icons/black/home.png" alt="" title="" /></div>
 		</a>	</div>
 	
@@ -103,12 +103,12 @@
                             <label>Email:</label>
                             <input type="text" name="CommentEmail" id="CommentEmail" value="" class="form_input" />
 							<label>Rating:</label>
-							<span class="rating" style="font-size:25px;"> 
-																											<i id="s1"  class="fa fa-star-o"><span style="width:8px; height:18px; margin-left:-14px; cursor:pointer; overflow:hidden; font-size:10px;" onClick="fill_star('1','half')" id="h1">&nbsp; </span> <span style="width:8px; height:18px;overflow:hidden; font-size:10px; cursor:pointer;" onClick="fill_star('1','full')" id="f1">&nbsp; </span></i>&nbsp;
-																											<i id="s2"  class="fa fa-star-o"><span style="width:8px; height:18px; margin-left:-14px; cursor:pointer; overflow:hidden; font-size:10px;" onClick="fill_star('2','half')" id="h2">&nbsp; </span> <span style="width:8px; height:18px;overflow:hidden; font-size:10px; cursor:pointer;" onClick="fill_star('2','full')" id="f2">&nbsp; </span></i>&nbsp;
-																											<i id="s3"  class="fa fa-star-o"><span style="width:8px; height:18px; margin-left:-14px; cursor:pointer; overflow:hidden; font-size:10px;" onClick="fill_star('3','half')" id="h3">&nbsp; </span> <span style="width:8px; height:18px;overflow:hidden; font-size:10px; cursor:pointer;" onClick="fill_star('3','full')" id="f3">&nbsp; </span></i>&nbsp;
-																											<i id="s4"  class="fa fa-star-o"><span style="width:8px; height:18px; margin-left:-14px; cursor:pointer; overflow:hidden; font-size:10px;" onClick="fill_star('4','half')" id="h4">&nbsp; </span> <span style="width:8px; height:18px;overflow:hidden; font-size:10px; cursor:pointer;" onClick="fill_star('4','full')" id="f4">&nbsp; </span></i>&nbsp;
-																											<i id="s5"  class="fa fa-star-o"><span style="width:8px; height:18px; margin-left:-14px; cursor:pointer; overflow:hidden; font-size:10px;" onClick="fill_star('5','half')" id="h5">&nbsp; </span> <span style="width:8px; height:18px;overflow:hidden; font-size:10px; cursor:pointer;" onClick="fill_star('5','full')" id="f5">&nbsp; </span></i>					       </span>
+							<span class="rating" style="font-size:40px;"> 
+																											<i id="s1"  class="fa fa-star-o" onClick="fill_star('1','full')"></i>&nbsp;
+																											<i id="s2"  class="fa fa-star-o" onClick="fill_star('2','full')"></i>&nbsp;
+																											<i id="s3"  class="fa fa-star-o" onClick="fill_star('3','full')"></i>&nbsp;
+																											<i id="s4"  class="fa fa-star-o" onClick="fill_star('4','full')"></i>&nbsp;
+																											<i id="s5"  class="fa fa-star-o" onClick="fill_star('5','full')"></i>				       </span>
                             <input type="hidden" name="rating" id="rating" value="" class="form_input" />
                             <label>Comment:</label>
                             <textarea name="Comment" id="Comment" class="form_textarea" rows="" cols=""></textarea>
