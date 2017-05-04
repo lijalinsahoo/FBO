@@ -68,6 +68,8 @@ function empty_star() {
 							$("#CommentName").val('') ;
 							$("#CommentEmail").val('') ;
 							$("#rating").val('') ;
+							$("#movie_title").val('') ;
+							$("#movie_id").val('') ;
 							$("#Comment").val('') ;
 							empty_star();
                         }
