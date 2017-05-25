@@ -1,2 +1,2 @@
-var BaseURL = "http://swsinc.in/FBO/phonegap/";
-var ImgURL = "http://swsinc.in/FBO/demo/";
+var BaseURL = "http://freshboxoffice.com/phonegap/";
+var ImgURL = "http://freshboxoffice.com/";
