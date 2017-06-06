@@ -220,13 +220,12 @@ background-color:#000000;
 /* HEADER LEFT */ 
 .navbar_left{
 float:left;
-width:40%;
-padding:0 0 0 5%;
+
 }
 .navbar_left a img{
 display:inline-block;
 max-width:100%;
-padding:8px 0 0 0;
+
 }
 .logo_text{ 
 font-size:32px;
