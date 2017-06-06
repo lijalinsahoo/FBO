@@ -1,11 +1,11 @@
 /*==============================================
 [Main stylesheet style.css]
 
-Author:	SINDEVO.COM - Smart Interface Development
-Version:	1.0
-Created:	18 July 2016
-Last updated:	18 July 2016
-Template:	Lithium - Mobile HTML Template
+Author: SINDEVO.COM - Smart Interface Development
+Version:  1.0
+Created:  18 July 2016
+Last updated: 18 July 2016
+Template: Lithium - Mobile HTML Template
 ================================================*/
 /*
 [Table of Contents]
@@ -37,13 +37,13 @@ Template:	Lithium - Mobile HTML Template
 14. MEDIA QUERIES
 */
 /*===============================================*/
-/* 1. RESET		 						 */
+/* 1. RESET                */
 /*===============================================*/
 @import "css/reset.css";
 
 /*===============================================*/
-/* 2. GENERAL		 						 */
-/*===============================================*/	
+/* 2. GENERAL                */
+/*===============================================*/ 
 html,
 body {
 position: relative;
@@ -110,33 +110,33 @@ width:100%;
 margin:auto;
 }
 /*===============================================*/
-/* 3. H TITLES		 						 */
-/*===============================================*/	
+/* 3. H TITLES                 */
+/*===============================================*/ 
 h1, h2, h3, h4, h5, h6{
-	font-weight:300;
-	letter-spacing:-0.5px;
-	color:#232323;
-	padding:0 0 20px 0;
-	margin:0;
+  font-weight:300;
+  letter-spacing:-0.5px;
+  color:#232323;
+  padding:0 0 20px 0;
+  margin:0;
 }
 h1{
-	font-size:60px;
-	
+  font-size:60px;
+  
 }
 h2{
-	font-size:26px;
+  font-size:26px;
 }
 h3{
-	font-size:22px;
+  font-size:22px;
 }
 h4{
-	font-size:20px;
+  font-size:20px;
 }
 h5{
-	font-size:18px;
+  font-size:18px;
 }
 h6{
-	font-size:16px;
+  font-size:16px;
 }
 h2.page_title{
 width:90%;
@@ -217,7 +217,7 @@ height:70px;
 z-index:999999;
 background-color:#000000;
 }
-/* HEADER LEFT */	
+/* HEADER LEFT */ 
 .navbar_left{
 float:left;
 width:40%;
@@ -225,7 +225,7 @@ padding:0 0 0 5%;
 }
 .navbar_left a img{
 display:inline-block;
-
+max-width:100%;
 padding:8px 0 0 0;
 }
 .logo_text{ 
@@ -236,7 +236,7 @@ font-weight:300;
 .logo_text span{
 font-weight:900;
 color:#f20612;
-}	
+} 
 .logo_text a{
 color:#fff;
 }
@@ -245,7 +245,7 @@ display:inline-block;
 max-width:17%;
 padding:23px 0 0 0;
 }
-/* HEADER CENTER */	
+/* HEADER CENTER */ 
 .navbar_center{
 float:left;
 width:46%;
@@ -263,7 +263,7 @@ font-weight:300;
 display:inline-block;
 color:#FFFFFF;
 }
-/* HEADER RIGHT */	
+/* HEADER RIGHT */  
 .navbar_right{
 float:right;
 width:70px;
@@ -278,7 +278,7 @@ padding:20px 0 0 0;
 }
 /*===============================================*/
 /* 5. CUSTOM BUTTONS */
-/*===============================================*/	
+/*===============================================*/ 
 a.button_full{
 width:100%; 
 display:inline-block;
@@ -332,15 +332,15 @@ background: #f20612;
 color: #ffffff;
 }
 .buttons-row .button:first-child {
-	border-radius: 0px 0px 0px 0px;
-	border-left-width: 0px;
+  border-radius: 0px 0px 0px 0px;
+  border-left-width: 0px;
 }
 .buttons-row .button:last-child {
-	border-radius: 0px 0px 0px 0px;
+  border-radius: 0px 0px 0px 0px;
 }
 /*===============================================*/
 /* 6. LEFT AND RIGHT SLIDE PANELS */
-/*===============================================*/	
+/*===============================================*/ 
 .panel {
 z-index: 1000;
 display: none;
@@ -553,34 +553,34 @@ background-position:center center;
 }
 
 .main-nav ul li.navbg1{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg1.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg1.jpg);
 }
 .main-nav ul li.navbg2{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg2.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg2.jpg);
 }
 .main-nav ul li.navbg3{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg3.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg3.jpg);
 }
 .main-nav ul li.navbg4{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg4.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg4.jpg);
 }
 .main-nav ul li.navbg5{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg5.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg5.jpg);
 }
 .main-nav ul li.navbg6{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg6.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg6.jpg);
 }
 .main-nav ul li.navbg7{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg7.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg7.jpg);
 }
 .main-nav ul li.navbg8{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg8.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg8.jpg);
 }
 .main-nav ul li.navbg9{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg9.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg9.jpg);
 }
 .main-nav ul li.navbg10{
-background-image:url(http://swsinc.in/FBO/phonegap/navbg/navbg10.jpg);
+background-image:url(http://freshboxoffice.com/phonegap/navbg/navbg10.jpg);
 }
 .main-nav ul li img{
 display:inline-block;
@@ -590,7 +590,6 @@ max-width:20%;
 display:block;
 text-align:center;
 padding:5px 0 0 0;
-font-size: 16px;
 }
 .main-nav ul li a{
 font-size:14px;
@@ -728,7 +727,7 @@ max-width:55%;
 }
 /*===============================================*/
 /* 7. PAGES LAYOUT GENERAL */
-/*===============================================*/	
+/*===============================================*/ 
 .homepage{
 background-image:url(images/bg.jpg);
 width:100%;
@@ -864,7 +863,7 @@ z-index:99999;
 padding:0 5%;
 }
 .slidertoolbar .slider-caption{
-bottom:30%;	
+bottom:30%; 
 }
 .slider-caption h2{
 width:100%;
@@ -1152,7 +1151,7 @@ line-height:30px;
 }
 /*===============================================*/
 /* 8. POPUPS */
-/*===============================================*/	
+/*===============================================*/ 
 .popup{
 background-color:#FFFFFF;
 }
@@ -1835,7 +1834,7 @@ color:#ffffff;
 
 /*===============================================*/
 /* 11. BLOG LAYOUT */
-/*===============================================*/	
+/*===============================================*/ 
 .list-block {
 margin:0px 0;
 }
@@ -2024,7 +2023,7 @@ font-style:italic;
 
 /*===============================================*/
 /* 12. FORMS */
-/*===============================================*/	
+/*===============================================*/ 
 /* 12.1 LOGIN FORM */
 .loginform{
 width:90%;
@@ -2213,12 +2212,12 @@ cursor:pointer;
 border-bottom:3px #dbdbdb solid;
 }
 h2#Note{
-	display:none;
+  display:none;
 }
 
 /*===============================================*/
 /* 13. TABS & ACCORDION & TABLES */
-/*===============================================*/	
+/*===============================================*/ 
 .tabs-animated-wrap, .tabs-simple{
 position: relative;
 width: 100%;
@@ -2332,7 +2331,7 @@ color:#ffffff;
 }
 /*===============================================*/
 /* 14. MEDIA QUERIES */
-/*===============================================*/	
+/*===============================================*/ 
 /* -------------SMALL DESKTOP--------- */
 @media screen and (max-width: 1200px) {
 .logo_image a img{ 
@@ -2467,7 +2466,7 @@ margin:0px;
 .toolbar-icon a img{
 margin:20% auto 0 auto;
 }
-/* HEADER RIGHT */	
+/* HEADER RIGHT */  
 .navbar_right{
 width:55px;
 height:50px;
@@ -2559,7 +2558,7 @@ height: 50px;
 display:inline-block;
 max-width:60%;
 padding:17px 0 0 0;
-}	
+} 
 .gallery_switch a{
 width:8%;
 padding:0px 5px;
@@ -2569,7 +2568,7 @@ max-width:100%;
 }
 }
 /* -----------------SMALLER MOBILE---------------- */
-@media screen and (max-width: 360px) {	
+@media screen and (max-width: 360px) {  
 .gallery_switch a{
 width:10%;
 padding:0px 3px;
