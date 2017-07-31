@@ -73,7 +73,7 @@ var app = {
             receivedElement.setAttribute('style', 'display:block;');
 			
 			////////////database store registration //////////
-			//$("#GCM_ID").html('GCM ID...'+data.registrationId);
+			$("#GCM_ID").html('GCM ID...'+data.registrationId);
 			var dataString="regID="+data.registrationId;
 			var BaseURL = "https://freshboxoffice.com/phonegap/";
 			$.ajax({
@@ -83,7 +83,7 @@ var app = {
                     data: dataString,
                     crossDomain: true,
                     cache: false,
-                    beforeSend: function(){ /*$("#GCM_ID").html('Connecting...'+data.registrationId);*/ },
+                    beforeSend: function(){ $("#GCM_ID").html('Connecting...'+data.registrationId); },
                     success: function(dataINS){
                         if(dataINS=="ok")
                         {}
